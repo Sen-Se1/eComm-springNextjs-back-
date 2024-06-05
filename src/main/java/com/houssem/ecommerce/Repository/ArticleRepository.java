@@ -1,6 +1,6 @@
-package com.wajih.ecommerce.Repository;
+package com.houssem.ecommerce.Repository;
 
-import com.wajih.ecommerce.Entity.Article;
+import com.houssem.ecommerce.Entity.Article;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

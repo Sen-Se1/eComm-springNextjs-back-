@@ -1,4 +1,4 @@
-package com.wajih.ecommerce;
+package com.houssem.ecommerce;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

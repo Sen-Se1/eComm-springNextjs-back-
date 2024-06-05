@@ -1,13 +1,13 @@
-package com.wajih.ecommerce.Controller;
+package com.houssem.ecommerce.Controller;
 
-import com.wajih.ecommerce.Entity.Article;
-import com.wajih.ecommerce.Entity.Client;
-import com.wajih.ecommerce.Entity.Commande;
-import com.wajih.ecommerce.Exception.NotFoundException;
-import com.wajih.ecommerce.Service.ArticleService;
-import com.wajih.ecommerce.Service.ClientService;
-import com.wajih.ecommerce.Service.CommandeService;
-import com.wajih.ecommerce.dto.ReqRes;
+import com.houssem.ecommerce.Entity.Article;
+import com.houssem.ecommerce.Entity.Client;
+import com.houssem.ecommerce.Entity.Commande;
+import com.houssem.ecommerce.Exception.NotFoundException;
+import com.houssem.ecommerce.Service.ArticleService;
+import com.houssem.ecommerce.Service.ClientService;
+import com.houssem.ecommerce.Service.CommandeService;
+import com.houssem.ecommerce.dto.ReqRes;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,7 +25,10 @@ public class CommandeController {
     private final ClientService clientService;
     private final ArticleService articleService;
 
-
+    @GetMapping
+    public ResponseEntity<?> getAllCommands(){
+        return ResponseEntity.status(HttpStatus.OK).body(commande.getAllCommands());
+    }
 
     @GetMapping("/user/{id}")
     public ResponseEntity<?> getCommandByUserId(@PathVariable("id") int id){
@@ -42,13 +45,11 @@ public class CommandeController {
     public ResponseEntity<?> addProduct(@RequestBody ReqRes req){
         Client client = clientService.getClient(req.getIdClient());
         Article article = articleService.finById(req.getIdArticle());
-        System.out.println(client);
-        System.out.println(article);
         if(!client.getCommandes().isEmpty()){
             client.getCommandes().get(0).getArticles().add(article);
         }
         else{
-            Commande savedCommande= this.commande.save(new Commande());
+            Commande savedCommande = this.commande.save(new Commande());
             List<Article> ArtList = new ArrayList<>();
             ArtList.add(article);
             savedCommande.setArticles(ArtList);

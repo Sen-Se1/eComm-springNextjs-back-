@@ -1,8 +1,8 @@
-package com.wajih.ecommerce.dto;
+package com.houssem.ecommerce.dto;
 
-import com.wajih.ecommerce.Entity.Article;
-import com.wajih.ecommerce.Entity.Client;
-import com.wajih.ecommerce.Entity.Commande;
+import com.houssem.ecommerce.Entity.Article;
+import com.houssem.ecommerce.Entity.Client;
+import com.houssem.ecommerce.Entity.Commande;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

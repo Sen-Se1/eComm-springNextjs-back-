@@ -1,10 +1,8 @@
-package com.wajih.ecommerce.Controller;
+package com.houssem.ecommerce.Controller;
 
-import com.wajih.ecommerce.Entity.Article;
-import com.wajih.ecommerce.Exception.NotFoundException;
-import com.wajih.ecommerce.Repository.ArticleRepository;
-import com.wajih.ecommerce.Service.ArticleService;
-import com.wajih.ecommerce.dto.ReqRes;
+import com.houssem.ecommerce.Entity.Article;
+import com.houssem.ecommerce.Exception.NotFoundException;
+import com.houssem.ecommerce.Service.ArticleService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,12 +1,9 @@
-package com.wajih.ecommerce.Controller;
+package com.houssem.ecommerce.Controller;
 
-import com.wajih.ecommerce.Entity.Client;
-import com.wajih.ecommerce.Exception.NotFoundException;
-import com.wajih.ecommerce.Service.ClientService;
-import com.wajih.ecommerce.dto.ReqRes;
-import lombok.AllArgsConstructor;
+import com.houssem.ecommerce.Entity.Client;
+import com.houssem.ecommerce.Exception.NotFoundException;
+import com.houssem.ecommerce.Service.ClientService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

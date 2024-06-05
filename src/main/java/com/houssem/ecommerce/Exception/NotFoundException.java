@@ -1,4 +1,4 @@
-package com.wajih.ecommerce.Exception;
+package com.houssem.ecommerce.Exception;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

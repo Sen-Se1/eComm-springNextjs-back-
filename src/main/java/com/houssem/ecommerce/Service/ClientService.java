@@ -1,13 +1,12 @@
-package com.wajih.ecommerce.Service;
+package com.houssem.ecommerce.Service;
 
-import com.wajih.ecommerce.Entity.Client;
-import com.wajih.ecommerce.Exception.NotFoundException;
-import com.wajih.ecommerce.Repository.ClientRepository;
+import com.houssem.ecommerce.Entity.Client;
+import com.houssem.ecommerce.Exception.NotFoundException;
+import com.houssem.ecommerce.Repository.ClientRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @RequiredArgsConstructor
 @Service

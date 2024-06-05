@@ -1,9 +1,9 @@
-package com.wajih.ecommerce.Service;
+package com.houssem.ecommerce.Service;
 
 
-import com.wajih.ecommerce.Entity.Commande;
-import com.wajih.ecommerce.Exception.NotFoundException;
-import com.wajih.ecommerce.Repository.CommandeRepository;
+import com.houssem.ecommerce.Exception.NotFoundException;
+import com.houssem.ecommerce.Repository.CommandeRepository;
+import com.houssem.ecommerce.Entity.Commande;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
